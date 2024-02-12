@@ -1,4 +1,4 @@
-# KVMD-ARMBIAN
+# KVMD-ARMBIAN for Orange Pi PC (unsupported SBC)
 This project support non Raspberry Pi device to running pikvm on armbian
 # Install
 KVMD Install for armbian
