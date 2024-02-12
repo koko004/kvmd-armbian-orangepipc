@@ -24,6 +24,9 @@ Original Script [https://kvmnerds.com/RPiKVM/install-pikvm-raspbian.sh]
 ## Step 1
 - Flash armbian debian [Recommended bullseye] for your tv box (If kernel not support otg you should build a kernel enable otg features)
     - Orange Pi PC Armbian ISO: https://xogium.performanceservers.nl/archive/orangepipc/archive/Armbian_23.8.1_Orangepipc_jammy_current_6.1.47_minimal.img.xz
+    - Burn img file to micro-sd:
+        - ''xzcat Armbian_23.8.1_Orangepipc_jammy_current_6.1.47.img.xz | pv | dd of=/dev/mmcblkX bs=1M''
+        - ''dd if=Armbian_23.8.1_Orangepipc_jammy_current_6.1.47.img of=/dev/mmcblkX bs=1''
 ## Step 2
 - Modify your dtb file to enable otg feature. Change dr_mode from host to peripheral for otg usb port.
     - 
