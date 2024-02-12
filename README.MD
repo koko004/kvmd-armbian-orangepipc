@@ -33,9 +33,9 @@ Original Script [https://kvmnerds.com/RPiKVM/install-pikvm-raspbian.sh]
     - Add `overlays=usbhost0 usbhost1 usbhost2 usbhost3`
 - If you use rk322x (rk3228A rk3228B rk3229) series chipset, you can use dtb/4.4/rk332x-box.dtb 
 ## Step 3
-`git clone https://github.com/xe5700/kvmd-armbian.git`
-`cd kvmd-armbian`
-`./install.sh` (If very slow, you can use install-mirror.sh to boost install speed.)
+- `git clone https://github.com/xe5700/kvmd-armbian.git`
+- `cd kvmd-armbian`
+- `./install.sh` (If very slow, you can use install-mirror.sh to boost install speed.)
 ## Step 4
 - running install.sh or install-mirror.sh after reboot os then running again.
 - Enjoy
