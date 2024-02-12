@@ -26,15 +26,16 @@ Original Script [https://kvmnerds.com/RPiKVM/install-pikvm-raspbian.sh]
     - Orange Pi PC Armbian ISO: https://xogium.performanceservers.nl/archive/orangepipc/archive/Armbian_23.8.1_Orangepipc_jammy_current_6.1.47_minimal.img.xz
     - Burn img file to micro-sd:
         - `xzcat Armbian_23.8.1_Orangepipc_jammy_current_6.1.47.img.xz | pv | dd of=/dev/mmcblkX bs=1M`
-        - `dd if=Armbian_23.8.1_Orangepipc_jammy_current_6.1.47.img of=/dev/mmcblkX bs=1'
+        - `dd if=Armbian_23.8.1_Orangepipc_jammy_current_6.1.47.img of=/dev/mmcblkX bs=1`
 ## Step 2
 - Modify your dtb file to enable otg feature. Change dr_mode from host to peripheral for otg usb port.
-    - 
+    - `nano /boot/armbianEnv.txt`
+    - Add `overlays=usbhost0 usbhost1 usbhost2 usbhost3`
 - If you use rk322x (rk3228A rk3228B rk3229) series chipset, you can use dtb/4.4/rk332x-box.dtb 
 ## Step 3
-git clone https://github.com/xe5700/kvmd-armbian.git
-cd kvmd-armbian
-./install.sh (If very slow, you can use install-mirror.sh to boost install speed.)
+`git clone https://github.com/xe5700/kvmd-armbian.git`
+`cd kvmd-armbian`
+`./install.sh` (If very slow, you can use install-mirror.sh to boost install speed.)
 ## Step 4
 - running install.sh or install-mirror.sh after reboot os then running again.
 - Enjoy
