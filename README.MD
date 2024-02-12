@@ -25,6 +25,7 @@ Original Script [https://kvmnerds.com/RPiKVM/install-pikvm-raspbian.sh]
 - Flash armbian debian [Recommended bullseye] for your tv box (If kernel not support otg you should build a kernel enable otg features)
 ## Step 2
 - Modify your dtb file to enable otg feature. Change dr_mode from host to peripheral for otg usb port.
+# 1
 - If you use rk322x (rk3228A rk3228B rk3229) series chipset, you can use dtb/4.4/rk332x-box.dtb 
 ## Step 3
 git clone https://github.com/xe5700/kvmd-armbian.git
